@@ -7,6 +7,7 @@ const WhatIDo = () => {
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
+
   useEffect(() => {
     if (ScrollTrigger.isTouch) {
       containerRef.current.forEach((container) => {
@@ -19,11 +20,14 @@ const WhatIDo = () => {
     return () => {
       containerRef.current.forEach((container) => {
         if (container) {
-          container.removeEventListener("click", () => handleClick(container));
+          container.removeEventListener("click", () =>
+            handleClick(container)
+          );
         }
       });
     };
   }, []);
+
   return (
     <div className="whatIDO">
       <div className="what-box">
@@ -36,6 +40,7 @@ const WhatIDo = () => {
       </div>
       <div className="what-box">
         <div className="what-box-in">
+          {/* DEVELOP */}
           <div className="what-border2">
             <svg width="100%">
               <line
@@ -88,27 +93,31 @@ const WhatIDo = () => {
 
             <div className="what-content-in">
               <h3>DEVELOP</h3>
-              <h4>Description</h4>
+              <h4>Building scalable & interactive applications</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae.
+                I specialize in developing full-stack applications and front-end
+                interfaces with clean, efficient, and scalable code. From AI-powered
+                systems to modern web platforms, I combine problem-solving skills
+                with creativity to bring impactful digital products to life.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset & Tools</h5>
               <div className="what-content-flex">
                 <div className="what-tags">JavaScript</div>
                 <div className="what-tags">TypeScript</div>
-                <div className="what-tags">Three.js</div>
                 <div className="what-tags">React</div>
-                <div className="what-tags">Css</div>
-                <div className="what-tags">Node.js</div>
                 <div className="what-tags">Next.js</div>
+                <div className="what-tags">Node.js</div>
                 <div className="what-tags">Express.js</div>
-                <div className="what-tags">PHP</div>
-                <div className="what-tags">MySql</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">SQL</div>
+                <div className="what-tags">Tailwind CSS</div>
+                <div className="what-tags">GSAP</div>
               </div>
               <div className="what-arrow"></div>
             </div>
           </div>
+
+          {/* DESIGN */}
           <div
             className="what-content what-noTouch"
             ref={(el) => setRef(el, 1)}
@@ -129,21 +138,23 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
             <div className="what-content-in">
               <h3>DESIGN</h3>
-              <h4>Description</h4>
+              <h4>Crafting engaging digital experiences</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                quia aliquid laboriosam ducimus sit molestiae
+                I design intuitive, user-friendly interfaces and leverage
+                animations to make applications more engaging. My focus is on
+                blending usability with aesthetics, ensuring a seamless experience
+                across devices while integrating AI-driven insights for better
+                outcomes.
               </p>
-              <h5>Skillset & tools</h5>
+              <h5>Skillset & Tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Blender</div>
-                <div className="what-tags">Zbrush</div>
                 <div className="what-tags">UI Design</div>
-                <div className="what-tags">Motion</div>
-                <div className="what-tags">Rigging</div>
-                <div className="what-tags">3D Animation</div>
-                <div className="what-tags">Character Design</div>
-                <div className="what-tags">Modelling</div>
+                <div className="what-tags">Figma</div>
+                <div className="what-tags">Responsive Web</div>
+                <div className="what-tags">Motion Design</div>
+                <div className="what-tags">3D Elements</div>
+                <div className="what-tags">Animations</div>
+                <div className="what-tags">Agile Design</div>
               </div>
               <div className="what-arrow"></div>
             </div>

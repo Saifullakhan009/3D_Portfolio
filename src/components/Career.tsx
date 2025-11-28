@@ -12,46 +12,41 @@ const Career = () => {
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
+
+          {/* Prompt Engineering Intern */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Prompt Engineering Intern</h4>
+                <h5>Mysore Consulting Group – Mysore, India</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>Apr 2025 – Present</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Designed and optimized 150+ AI prompts using DALL·E, Midjourney,
+              Stable Diffusion, and Leonardo AI, improving accuracy by 35% and
+              reducing revision time by 20%. Applied advanced prompt engineering
+              techniques and Git-based workflows to ensure reproducibility,
+              collaboration, and efficient iterations.
             </p>
           </div>
+
+          {/* Marketing Team Member */}
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Marketing Team Member</h4>
+                <h5>CoachIt – Leeds, England</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>Jan 2024 – Oct 2024</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
-              </div>
-              <h3>NOW</h3>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              Executed targeted digital marketing campaigns within Agile sprints,
+              driving coaches to $10K+ monthly revenue in under 100 days through
+              optimized landing pages, automated email funnels, and CRM
+              workflows. Leveraged Git-based version control, CI/CD automation,
+              and data-driven feedback loops to enhance ad performance, lead
+              conversion rates, and client engagement metrics.
             </p>
           </div>
         </div>
